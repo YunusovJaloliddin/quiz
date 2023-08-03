@@ -42,7 +42,7 @@ class LevelButton extends StatelessWidget {
           }
           list.add(random);
         }
-        Navigator.push(
+        Navigator.pushReplacement(
             context,
             MaterialPageRoute(
               builder: (context) => QuizTest(
@@ -50,7 +50,6 @@ class LevelButton extends StatelessWidget {
                 time: time,
               ),
             ));
-        print(list);
       },
       child: Text(
         text,
